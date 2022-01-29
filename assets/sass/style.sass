@@ -1,0 +1,146 @@
+@import 'fontello.css'
+
+/* SASS */
+/* basic */
+$first-color: #FED100
+$second-color: #FFFFFF
+$third-color: #333333
+
+*
+	margin: 0
+	padding: 0
+	font-family: 'Montserrat'
+	font-style: normal
+	font-weight: 400
+
+a
+	text-decoration: none
+
+button
+	text-decoration: none
+	background-color: $second-color
+	border: none
+	cursor: pointer
+
+nav
+	padding-top: 40px
+	background-color: $first-color
+ul
+	list-style-type: none
+.basic_30px
+	font-weight: 600
+	font-size: 30px
+	line-height: 37px
+.logo
+	text-transform: uppercase
+	color: $third-color
+	cursor: pointer
+.title
+	font-weight: 600
+	font-size: 30px
+	line-height: 37px	
+.text
+	font-size: 16px
+	line-height: 130.4%
+	color: $third-color
+.btn-order
+	vertical-align: middle
+	text-align: center
+.btn-order_2
+	padding: 13px 64px
+	border: 1px solid $third-color
+	background: none
+.social
+	color: $third-color
+	&:before
+		margin-right: 10px
+		font-family: 'fontello'
+		font-size: 22px
+	&:nth-child(1):before
+		content: '\f16a'
+	&:nth-child(2):before
+		font-size: 17px
+		content: '\e803'
+	&:nth-child(3):before
+		font-size: 20px
+		content: '\f30e'
+	&:nth-child(4):before
+		content: '\f16d'
+.mail
+	display: block
+	font-size: 16px
+	line-height: 24px
+	color: $third-color
+.phone
+	font-weight: 600
+	font-size: 24px
+	color: #000
+	cursor: pointer
+.nav-panel_noactive
+	display: grid
+.basic__16px
+	font-weight: 500
+	font-size: 16px
+	line-height: 21px
+.basic__18px
+	font-weight: 500
+	font-size: 18px
+	line-height: 22px
+.basic__20px
+	font-weight: 500
+	font-size: 20px
+	line-height: 24px
+.basic__30px
+	font-weight: 600
+	font-size: 30px
+	line-height: 37px
+.line-height__29px
+	font-weight: 600
+	font-size: 24px
+	line-height: 29px
+/* block "Map" */
+#map
+	display: block
+	width: 100%
+	height: 900px
+	// pointer-events: none
+.map
+	&__content
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		min-height: 163px
+		padding: 14px 11.5px
+		border: 0px solid #000
+	&__title
+		text-transform: uppercase
+	&__info
+		margin-top: 40px
+	&__item
+		display: block
+		color: $third-color
+		&:before
+			margin-right: 15.57px
+			font-family: 'fontello'
+			font-size: 18px
+			content: '\e805'
+			color: $first-color
+	&__social-network
+		margin-top: 27px
+		display: flex
+		justify-content: flex-end
+		align-items: center
+	&__footer
+		display: none
+@media screen and (max-width: 1024px)
+	/* block "Map" */
+	.map
+		&__footer
+			display: block
+		&__info
+			margin-left: 10%
+			margin-right: 10%
+		&__item
+			&:before
+				margin-right: 0
+				content: ''
